@@ -102,7 +102,7 @@ function startScanner() {
         while (scanNum == 0) {
 
         var bookISBN= result.codeResult.code;
-        var url = "http://openlibrary.org/api/books?bibkeys=ISBN:"+bookISBN+"&jscmd=details&format=json"
+        var url = "https://openlibrary.org/api/books?bibkeys=ISBN:"+bookISBN+"&jscmd=details&format=json"
         $.ajax({
             url: url,
             method:"GET"
